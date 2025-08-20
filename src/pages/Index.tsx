@@ -60,7 +60,7 @@ const Index = () => {
           <div className="flex justify-between items-center py-6">
             <div className="flex items-center space-x-3">
               <Icon name="Scale" size={32} className="text-primary" />
-              <h1 className="text-2xl font-heading font-bold text-gray-900">ЮридСервис</h1>
+              <h1 className="text-2xl font-heading font-bold text-gray-900">Parus Legal Services</h1>
             </div>
             <nav className="hidden md:flex space-x-8">
               <a href="#services" className="text-gray-700 hover:text-primary font-body">Услуги</a>
@@ -308,7 +308,7 @@ const Index = () => {
             <div>
               <div className="flex items-center space-x-3 mb-4">
                 <Icon name="Scale" size={28} className="text-blue-legal-500" />
-                <h3 className="text-xl font-heading font-bold">ЮридСервис</h3>
+                <h3 className="text-xl font-heading font-bold">Parus Legal Services</h3>
               </div>
               <p className="font-body text-gray-300">
                 Надежная правовая защита для физических и юридических лиц
@@ -346,7 +346,7 @@ const Index = () => {
           </div>
           
           <div className="border-t border-gray-800 mt-8 pt-8 text-center font-body text-gray-400">
-            <p>&copy; 2024 ЮридСервис. Все права защищены.</p>
+            <p>&copy; 2024 Parus Legal Services. Все права защищены.</p>
           </div>
         </div>
       </footer>
