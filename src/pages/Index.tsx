@@ -63,12 +63,12 @@ const Index = () => {
               <h1 className="text-2xl font-heading font-bold text-gray-900">Parus Legal Services</h1>
             </div>
             <nav className="hidden md:flex space-x-8">
-              <a href="#services" className="text-gray-700 hover:text-primary font-body">Услуги</a>
-              <a href="#consultation" className="text-gray-700 hover:text-primary font-body">Консультации</a>
-              <a href="#documents" className="text-gray-700 hover:text-primary font-body">Документы</a>
-              <a href="#contact" className="text-gray-700 hover:text-primary font-body">Контакты</a>
+              <a href="#services" className="text-gray-700 hover:text-primary font-body cursor-pointer transition-colors" onClick={(e) => { e.preventDefault(); document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' }); }}>Услуги</a>
+              <a href="#consultation" className="text-gray-700 hover:text-primary font-body cursor-pointer transition-colors" onClick={(e) => { e.preventDefault(); setIsBookingOpen(true); }}>Консультации</a>
+              <a href="#documents" className="text-gray-700 hover:text-primary font-body cursor-pointer transition-colors" onClick={(e) => { e.preventDefault(); document.getElementById('documents')?.scrollIntoView({ behavior: 'smooth' }); }}>Документы</a>
+              <a href="#contact" className="text-gray-700 hover:text-primary font-body cursor-pointer transition-colors" onClick={(e) => { e.preventDefault(); document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' }); }}>Контакты</a>
             </nav>
-            <Button className="bg-primary hover:bg-primary/90 text-white">
+            <Button className="bg-primary hover:bg-primary/90 text-white" onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}>
               <Icon name="Phone" size={16} className="mr-2" />
               Связаться
             </Button>
@@ -80,7 +80,7 @@ const Index = () => {
       <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-5xl font-heading font-bold text-gray-900 mb-6">
-            Профессиональные юридические услуги
+            Юридические услуги
           </h1>
           <p className="text-xl font-body text-gray-600 mb-8 max-w-3xl mx-auto">
             Защищаем ваши права и интересы с 2010 года. Индивидуальный подход к каждому клиенту 
@@ -142,7 +142,7 @@ const Index = () => {
                 </div>
               </DialogContent>
             </Dialog>
-            <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary hover:text-white px-8">
+            <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary hover:text-white px-8" onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}>
               <Icon name="MessageCircle" size={20} className="mr-2" />
               Бесплатная консультация
             </Button>
